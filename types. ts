@@ -1,0 +1,16 @@
+export type DocumentTypeId =
+| 'safety-order'
+| 'maintenance'
+| 'custody-access'
+| 'divorce';
+
+export type CountyROI = string;
+
+export interface ApplicationData {
+applicantName: string;
+respondentName: string;
+county: CountyROI;
+documentType: DocumentTypeId;
+children?: string;
+notes?: string;
+}
